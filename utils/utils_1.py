@@ -114,7 +114,7 @@ def merge_csv_with_csv_module(csv_files, key='id'):
     # Iterate through each CSV file
     for file in csv_files:
         # Open the CSV file and create a CSV reader
-        with open(file, 'r') as csv_file:
+        with open(file, 'r', encoding='utf-8') as csv_file:
             csv_reader = csv.DictReader(csv_file)
 
             # Iterate through each row in the CSV file
